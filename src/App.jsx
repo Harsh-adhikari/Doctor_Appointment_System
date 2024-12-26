@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 // import Navbar from './components/Navbar'; // Ensure Navbar is correctly located in the components folder
-import Home from './pages/Home';
+import Home from './pages/home';
 import Contact from './pages/Contact';
 import Doctors from './pages/Doctors';
 import Login from './pages/Login';
@@ -10,6 +10,7 @@ import MyProfile from './pages/MyProfile';
 import MyAppointments from './pages/MyAppointments';
 import Appointment from './pages/Appointment';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
       </Routes>
+      <Footer />  
     </div>
   );
 };
